@@ -1,0 +1,63 @@
+<!doctype html>
+<title>Sentiment Analysis</title>
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="icon" href="https://www.clipartmax.com/png/middle/150-1509597_netowl-entity-extraction-and-entity-analytics-for-big-sentiment-icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif
+         color:black}
+.bgimg {
+  background-image: url('https://image.freepik.com/vector-gratis/emoticonos-fondo-espacio-vacio_79603-1023.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" style= "display:flex;">
+  <div> <img src="https://thomasschmidtur.pythonanywhere.com/static/images/SentText_Logo_Schriftzug.png" id="logo" /></div>
+  <div>  <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+   <i class="fa fa-envelope" style="font-size:40px;color:red"></i>&nbsp;ptnbvr@gmail.com
+    <a href="{{ url_for('about') }}"class="w3-bar-item w3-button w3-padding-large w3-hide-small">About US</a></div>
+</div>
+</div>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<!-- Page content -->
+<div class="block" style="max-width:2000px;margin-top:46px;height:650px;">
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+  <h1><a href="/">Sentiment Analysis</a></h1>
+  {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
+  {% endfor %}
+  {% block body %}{% endblock %}
+</div>
+
+<br/>
+<br/>
+<!-- Footer --
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" style = "height:10px">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>-->
+</div>
+
+</body>
+</html>

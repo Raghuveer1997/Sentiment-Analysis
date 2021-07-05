@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <p style = "color:white; ">Write something here then we will use the CNN+LSTM for sentiment analysis</p>
+    <form method=post>
+      <p style = "color:white;">Write something here: <textarea rows = "5" cols = "50" name = "sentence">
+         </textarea></p>
+         <input type=submit value=Evaluate>
+    </form>
+<style>
+input[type=submit]{
+background: rgb(119,1,1);
+background: linear-gradient(90deg, rgba(119,1,1,1) 0%, rgba(206,135,3,1) 42%, rgba(220,217,11,1) 93%);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+{% endblock %}
+<!--<input type=text name=sentence>-->
