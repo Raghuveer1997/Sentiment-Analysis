@@ -10,7 +10,7 @@ Run the following command to install the keras, flask and other dependency modul
 sudo pip install -r requirements.txt
 ```
 
-Below shows the sample code in [wordvec_bidirectional_lstm_softmax_train.py](demo/wordvec_bidirectional_lstm_softmax_train.py):
+Below shows the sample code in [cnn-lstm.py]:
 from keras.callbacks import ModelCheckpoint
 from keras.layers import Embedding, SpatialDropout1D, Conv1D, MaxPooling1D, LSTM, Dense
 from keras.models import model_from_json, Sequential
