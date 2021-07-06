@@ -11,7 +11,7 @@ sudo pip install -r requirements.txt
 ```
 
 Below shows the sample code in [wordvec_cnn_lstm_train.py]:
-```
+```python
 import numpy as np
 import sys
 import os
