@@ -57,7 +57,7 @@ The above commands will train wordvec_cnn_lstm model on the "data  umich-sentime
 
 ## Running Web Api Server
 
-Goto [templates](templates) directory and run the following command:
+Run the following command:
 
 ```bash
 python app.py
@@ -71,7 +71,7 @@ trained classifiers:
 
 ## Invoke Web Api
 
-For example, you can get the sentiments for the sentence "i like the Da Vinci Code a lot." by running the following command:
+For example, you can get the sentiments for the sentence "i like Fast and Furious 9 a lot." by running the following command:
 
 ```bash
 curl -H 'Content-Type: application/json' -X POST -d '{"network":"lstm_bidirectional_softmax", "sentence":"i like the Da Vinci Code a lot."}' http://localhost:5000/measure_sentiments
@@ -82,9 +82,9 @@ And the following will be the json response:
 ```json
 {
     "neg_sentiment": 0.0000434154,
-    "network": "lstm_bidirectional_softmax",
+    "network": "wordvec_cnn_lstm",
     "pos_sentiment": 0.999957,
-    "sentence": "i like the Da Vinci Code a lot."
+    "sentence": "i like Fast and Furious 9 a lot."
 }
 ```
 
