@@ -1,9 +1,9 @@
-Flask == 0.12.2
+flask
 keras
 numpy
 nltk
 h5py
 scikit-learn
-tensorflow
+tensorflow==2.4.1
 matplotlib
 pandas
