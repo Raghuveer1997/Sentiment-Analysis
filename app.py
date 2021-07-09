@@ -30,7 +30,7 @@ def main():
         return 'About Us'
 
 
-    @app.route('/wordvec_cnn_lstm', methods=['POST', 'GET'])
+    @app.route('/predict', methods=['POST', 'GET'])
     def wordvec_cnn_lstm():
         if request.method == 'POST':
             if 'sentence' not in request.form:
