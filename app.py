@@ -30,7 +30,7 @@ def main():
         return 'About Us'
 
 
-    @app.route('/predict', methods=['POST', 'GET'])
+    @app.route('/wordvec_cnn_lstm', methods=['POST', 'GET'])
     def wordvec_cnn_lstm():
         if request.method == 'POST':
             if 'sentence' not in request.form:
@@ -47,7 +47,7 @@ def main():
         return render_template('wordvec_cnn_lstm.html')
  
 
-    @app.route('/measure_sentiments', methods=['POST', 'GET'])
+    @app.route('/predict', methods=['POST', 'GET'])
     def measure_sentiment():
         if request.method == 'POST':
             if not request.json or 'sentence' not in request.json or 'network' not in request.json:
