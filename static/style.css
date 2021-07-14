@@ -1,0 +1,80 @@
+body            { font-family: sans-serif;}
+a, h1, h2       { color: white; }
+h1, h2          { font-family: 'Georgia', serif; margin: 0;position:center; }
+h1              { border-bottom: 1px solid black; }
+h2              { font-size: 1.2em; }
+
+.entries        { list-style: none; margin: 0; padding: 0; }
+.entries li     { margin: 0.8em 1.2em; }
+.entries li h2  { margin-left: -1em; }
+.add-entry      { font-size: 0.9em; border-bottom: 1px solid #ccc; }
+.add-entry dl   { font-weight: bold; }
+.metanav        { text-align: right; font-size: 0.8em; padding: 0.3em;
+                  margin-bottom: 1em; background: #fafafa; }
+.flash          { background: #cee5F5; padding: 0.5em;
+                  border: 1px solid #aacbe2; }
+.error          { background: #f0d6d6; padding: 0.5em; }
+#logo {
+ display: inline-block;
+vertical-align: top;
+height: 50px;
+width: 150px;
+background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.bgimg {
+  /*background-image: url('https://image.freepik.com/vector-gratis/emoticonos-fondo-espacio-vacio_79603-1023.jpg');*/
+  background-image: url('https://i.pinimg.com/originals/35/81/e9/3581e9f7e1a8b4fbcfd85028951047b9.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+    width:40vw;
+    height:40vh;
+    /*top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);*/
+    /*opacity:1;*/
+    background: rgb(119,1,1);
+background: linear-gradient(90deg, rgba(119,1,1,1) 0%, rgba(206,135,3,1) 42%, rgba(220,217,11,1) 93%);
+    box-shadow: 
+rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+rgba(17, 17, 26, 0.1) 0px 16px 56px, 
+rgba(17, 17, 26, 0.1) 0px 24px 80px;
+/*background-color:#ffb31a;*/
+color: white;
+} 
+
