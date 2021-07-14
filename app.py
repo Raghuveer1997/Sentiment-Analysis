@@ -2,6 +2,8 @@ from flask import Flask, request, send_from_directory, redirect, render_template
     make_response, abort
 import os
 import sys
+import nltk
+nltk.download('punkt')
 
 
 def main():
