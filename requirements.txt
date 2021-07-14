@@ -1,7 +1,7 @@
 flask
 keras
 numpy
-nltk
+nltk==3.5
 h5py
 scikit-learn
 tensorflow==2.4.1
