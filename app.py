@@ -74,6 +74,9 @@ def main():
     def not_found(error):
         return make_response(jsonify({'error': 'Not found'}), 404)
  
+    model_dir_path = os.path.join(current_dir, './model')
+    wordvec_cnn_lstm_classifier.load_model(model_dir_path)
+    
     app.run(debug=True, use_reloader=False)
 
 
