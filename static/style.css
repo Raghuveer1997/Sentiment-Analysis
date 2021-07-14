@@ -53,8 +53,8 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width:100vw;
-  height:93vh;
+  width:100%;
+  height:93%;
   display: flex;
   justify-content: center;
   align-items: center;
