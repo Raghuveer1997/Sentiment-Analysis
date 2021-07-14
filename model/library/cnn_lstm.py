@@ -4,9 +4,9 @@ from keras.models import model_from_json, Sequential
 import numpy as np
 from keras.preprocessing.sequence import pad_sequences
 
-from keras_sentiment_analysis.library.utility.tensorflow_utils import export_keras_to_tensorflow, \
+from Sentiment_Analysis.model.library.utility.tensorflow_utils import export_keras_to_tensorflow, \
     export_text_model_to_csv
-from keras_sentiment_analysis.library.utility.tokenizer_utils import word_tokenize
+from Sentiment_Analysis.model.library.utility.tokenizer_utils import word_tokenize
 from keras.utils import np_utils
 from sklearn.model_selection import train_test_split
 
