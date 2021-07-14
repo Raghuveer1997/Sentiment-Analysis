@@ -71,12 +71,6 @@ def main():
     @app.errorhandler(404)
     def not_found(error):
         return make_response(jsonify({'error': 'Not found'}), 404)
-
-    model_dir_path = os.path.join(current_dir, './model')
-
-    wordvec_cnn_lstm_classifier.load_model(model_dir_path)
-
-    wordvec_cnn_lstm_classifier.test_run('i liked the Da Vinci Code a lot.')
  
     app.run(debug=True, use_reloader=False)
 
