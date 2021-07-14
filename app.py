@@ -8,7 +8,7 @@ def main():
     current_dir = os.path.dirname(__file__)
     sys.path.append(os.path.join(current_dir, '..'))
     current_dir = current_dir if current_dir is not '' else '.'
-    from Sentiment-Analysis.model.library.cnn_lstm import WordVecCnnLstm
+    from Sentiment-Analysis-main.model.library.cnn_lstm import WordVecCnnLstm
    
 
     app = Flask(__name__)
