@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+    <hr/>
+    <p style = "color:white; font-size:2vw;">You said: {{ sentence }}</p>
+    <hr />
+    <ul style = "color:white; font-size:2vw;">
+        <li>Positive Sentiment: {{ sentiments[0] }}</li></br>
+        <li>Negative Sentiment: {{ sentiments[1] }}</li>
+    </ul>
+    <p style = "color:white; font-size:5vw;">Review is :{{values}}</p>
+
+
+
+    <hr />
+    <a href="{{ url_for('wordvec_cnn_lstm') }}">Try another one</a>
+{% endblock %}
